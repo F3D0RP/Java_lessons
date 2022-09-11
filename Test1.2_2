@@ -1,0 +1,30 @@
+/*
+Сумма цифр
+Дано трехзначное число N. Найдите сумму его цифр.
+
+Входные данные
+Вводится число N (100≤N≤999).
+
+Выходные данные
+Выведите сумму цифр числа N.
+
+Пример:
+
+Входные данные	Выходные данные
+179                 17
+829                 19
+
+ */
+import java.util.*;
+public class MyProgram {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int a, b, c, d, e;
+        a = in.nextInt();
+        b = a/100;
+        c = (a/10)%10;
+        d = a%10;
+        e = b + d + c;
+        System.out.println(e);
+    }
+}
